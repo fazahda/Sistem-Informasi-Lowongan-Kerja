@@ -5,16 +5,19 @@
  */
 package sistem_lowongan_kerja;
 
+import java.util.Date;
+
 /**
  *
  * @author Diah Ajeng
  */
 public class Orang {
     private String nama;
-    private String skill;
-    private String tglLahir;
+    private Date tglLahir;
     private String noHP;
     private String email;
+    private String alamat;
+    
 
     public String getNoHP() {
         return noHP;
@@ -40,21 +43,23 @@ public class Orang {
         this.nama = nama;
     }
 
-    public String getSkill() {
-        return skill;
-    }
-
-    public void setSkill(String skill) {
-        this.skill = skill;
-    }
-
-    public String getTglLahir() {
+    public Date getTglLahir() {
         return tglLahir;
     }
 
-    public void setTglLahir(String tglLahir) {
+    public void setTglLahir(Date tglLahir) {
         this.tglLahir = tglLahir;
     }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    
     
     
 }
